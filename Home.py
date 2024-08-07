@@ -7,8 +7,8 @@ import time
 from session_state import SessionState
 
 #s1a set up the page 
-st.set_page_config(page_title="Real-Estate App", page_icon="🏡", layout="wide")
-st.header("FINTECH REIT APP EXAMPLE")
+st.set_page_config(page_title="Snowflake Fintech App", page_icon="🏡", layout="wide")
+st.header("Real Estate Investment Trusts Analysis")
 st.markdown("##")
 
 #s1b progress bar

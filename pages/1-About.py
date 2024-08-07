@@ -46,8 +46,18 @@ expander.write('''
  
 st.divider()
 st.title("❓ About Real Estate Investment Trusts")
-expander = st.expander("Recent Trends")
+expander = st.expander("Overview")
 expander.write('''
+    ## What are Real Estate Investment Trusts (REITs)
+    - REITs (Real Estate Investment Trusts) are companies that own or manage buildings like shopping malls, apartment complexes, or office spaces.
+    
+    ## How do they work ?
+    - People can invest in REITs by buying shares, and the money is used to buy or manage these properties.
+
+    ## Why are they cool?
+    - REITs use technology to keep track of everything better and make sure the buildings run smoothly and are nice places for people to live or work.                       
+
+    ## What are some recent trends?            
     ### 1. Increased Adoption of Technology:
     - REITs have increasingly integrated technology to enhance operational efficiency and improve property management.
     - Innovations such as property management software, data analytics, and AI-driven decision-making tools are becoming common.
