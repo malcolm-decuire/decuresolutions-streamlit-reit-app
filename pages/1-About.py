@@ -23,68 +23,49 @@ time.sleep(1)
 my_bar.empty()
 
 #s1 user info 
-st.title("❓ Why should you care")
-st.header("💰: Increase your investment acumen")
-st.link_button("🔗 Value Investing","https://www.reddit.com/r/algotrading/comments/93pbwk/using_the_piotroski_f_score_as_a_factor/")
+#s1 user info 
+st.title("❓ About the Author")
+expander = st.expander("Malcolm Decuire II")
+expander.write('''
+### 1. Strong Technical Expertise:
+- I possess a solid foundation in engineering principles, with hands-on experience in both software and hardware technologies.
+- My technical background allows me to understand complex systems and solutions, enabling me to effectively communicate technical details to clients and stakeholders.
 
-#s1b background about REIT
-st.title("❓ What are REITs")
-st.subheader("5-min. read on REITs")
-st.link_button("🔗 LinkedIn Post", "https://www.linkedin.com/pulse/reits-everything-you-need-know-credence-family-office/")
+### 2. Proven Sales Acumen:
+- I have a track record of successfully identifying customer needs and aligning them with appropriate technical solutions.
+- My ability to bridge the gap between technical teams and customers has consistently resulted in closing deals and driving revenue growth.
 
+### 3. Excellent Communication Skills:
+- I excel in translating technical jargon into clear, understandable language for non-technical audiences.
+- My presentation and negotiation skills help me articulate the value of our solutions, fostering trust and building long-term client relationships.
 
-#s1 addtil info- piot
-st.title("❓ Why learn about Piotroski")
-st.link_button("🔗 Quick LinkedIn Summary","https://www.linkedin.com/pulse/piotroski-f-score-its-importance-understanding-/")
-
-#s1c addtl user guide- eod
-st.title("❓ What is EODHD")
-st.header("EODHD is a French based SaaS firm that offers Robust, powerful and easy to use APIs & Ready-to-go solutions")
-st.link_button("🔗 Python docs", "https://eodhd.com/financial-apis/python-financial-libraries-and-code-samples/")
-
-
-#s1a page setup-Style  Allow user to upload their own file
-with open('style.css') as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-#s1c page setup- guide 
-st.title('❓ Why choose EODHD data')
+### 4. Problem-Solving and Innovation:
+- I am adept at diagnosing client challenges and developing tailored solutions that meet their specific requirements.
+- My proactive approach to identifying opportunities for product and process improvement ensures that we deliver cutting-edge solutions that stay ahead of the competition.
+''')
+ 
 st.divider()
-st.subheader('1. Trade-off between free datasets that bored me vs paid-ones that didnt 😅')
-st.subheader('2. Needed access to historical data without massive annual contracts (bloomberg is expensive)')
-st.subheader('3. Its easier to work with data in environments Im already familiar with like Google Sheets, pandas, pyspark, etc')
-st.subheader('4. :blue[Experiement with rapid-prototyping to simiulate commcercial deadlines]')
-
-
-#s1d addtl page set up 
+st.title("❓ About Real Estate Investment Trusts")
+expander = st.expander("Recent Trends")
+expander.write('''
+    ### 1. Increased Adoption of Technology:
+    - REITs have increasingly integrated technology to enhance operational efficiency and improve property management.
+    - Innovations such as property management software, data analytics, and AI-driven decision-making tools are becoming common.
+    - Technology is being leveraged to optimize tenant experiences and streamline property maintenance.
+    
+    ### 2. Focus on Sustainability and ESG Criteria:
+    - There is a growing emphasis on sustainability and Environmental, Social, and Governance (ESG) criteria in the REIT sector.
+    - Investors and stakeholders are prioritizing green building practices, energy-efficient upgrades, and corporate responsibility.
+    - REITs are adopting sustainable practices to attract environmentally-conscious investors and meet regulatory requirements.
+    
+    ### 3. Shift Towards Diversified Asset Classes:
+    - REITs are diversifying their portfolios beyond traditional office and retail spaces to include sectors like logistics, healthcare, and data centers.
+    - This diversification helps mitigate risks and capitalize on emerging market trends.
+    - The pandemic has accelerated interest in sectors such as industrial and residential real estate.
+    
+    ### 4. Increased Focus on Remote Work and Flexible Spaces:
+    - The rise of remote work has influenced REITs to adapt their properties to support flexible working arrangements.
+    - There is a growing demand for co-working spaces and adaptable office environments.
+    - REITs are investing in properties that cater to hybrid work models and offer flexible leasing options.
+    ''')
 st.divider()
-st.header("🎮 Demo Disclaimer:")
-st.subheader("2 tickers analyzed: AMT & PLD")
-st.header("☑ NEXT STEPS Disclaimer")
-st.subheader("visit roadmap")
-
-st.divider()
-
-#s1e addtl guide info 
-col7, col8 = st.columns(2)
-with col7:
-    st.header("What is AMT")
-    st.write("AMT is a leading independent owner, operator and developer of multitenant communications real estate with a portfolio")
-    st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pPomlHQGDNA4vWGuw-icR36y57RYJkyC7kEG5NBC5g&s", caption='AMT', width=250)
-    st.link_button("AMTs SEC Filings", "https://www.americantower.com/investor-relations/sec-filings/")
-
-#s1f guide info PLD
-with col8:
-    st.header("What is PLD")
-    st.write("PLD acquires, develop, and maintain the largest collection of high-quality logistics real estate in the world.")
-    st.image("https://www.midamericaroofing.com/assets/1/6/MainFCKEditorDimension/3e6e40c833c0c17196fdb7a863329325.jpeg", caption='AMT',width=250)
-    st.link_button("PLDs SEC Filings", "https://ir.prologis.com/financials/sec-filings")
-
-
-#s2a notes to user
-st.subheader("EODHD workflow resource")
-st.caption("Here's how to automate the EODHD process")
-st.link_button("Resource", "https://eodhd.com/financial-apis/google-sheets-financial-add-in-for-eod-fundamentals-data/#Google_Sheets_Financial_Add-In")
-
-#s2b reload 
-st.button("🔄 Reload")
