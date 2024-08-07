@@ -34,7 +34,7 @@ with tab1:
    st.header("📅 Add More Securities & F-Scores")
    st.write("📌 Between Jan-Jun 2024 add more tickers")
    st.write("📝 Enable users to upload their own data and conduct analysis")
-   st.image("https://tickertapecdn.tdameritrade.com/assets/images/pages/md/reit-subsectors.jpg", width=400)
+   st.image("https://lh6.googleusercontent.com/Uvx9m7u7qaxkAU87vOBqbAKNYgIIC0dmqJHRqHVEzoKHXWgy_LY62Jxz3geeAeVUI44dHUUpg3PER6fMZsggq1uibJ6Wwkb7rKytaJ2HhndCU0bPAE0tijDCBA7ptyb6YQIBV8OtgwhaQcOObQ", width=400)
 
 with tab2:
    st.header("📅 Add More Insights")
